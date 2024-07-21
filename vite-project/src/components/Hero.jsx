@@ -17,11 +17,11 @@ function HeroSection() {
           </p>
           <div className="mt-8 flex">
             <button className="inline-flex items-center justify-center px-5 py-3 border border-transparent text-2xl font-medium rounded-md text-white bg-[#63C625] hover:bg-green-700"
-            onClick={() => navigate('/pharma')}>
+            onClick={() => navigate(`/login?role=PHARMA`)}>
               Pharma login
             </button>
             <button className="ml-4 inline-flex items-center justify-center px-5 py-3 border border-transparent text-2xl font-medium rounded-md text-white bg-[#63C625] hover:bg-green-700 "
-            onClick={() => navigate('/user')}>
+            onClick={() => navigate(`/login?role=USER`)}>
               User login
             </button>
           </div>

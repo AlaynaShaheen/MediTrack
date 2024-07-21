@@ -6,7 +6,8 @@ import medicinesData from '../medicinesData'
 import UserHome from '../src/pages/UserPages/UserHome'
 import { BrowserRouter , Routes , Route } from 'react-router-dom';
 import NotificationPage from '../src/pages/UserPages/Notifications';
-
+import Login from './pages/Login';
+import Signup from './pages/Signup';
 export default function App() {
   return (
     <div>
@@ -18,6 +19,8 @@ export default function App() {
           <Route path='/pharma/view-medicines' element={ <ViewMedicines medicines={medicinesData} /> } />
           <Route path="/notifications" element={<NotificationPage />} />
           <Route path="/user" element={<UserHome />} />
+          <Route path='/login' element={<Login/>}/>
+          <Route path='/signup' element={<Signup/>}/>
         </Routes>
       </BrowserRouter>
     </div>
