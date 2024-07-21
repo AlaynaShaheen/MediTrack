@@ -28,7 +28,7 @@ function PharmaHome() {
         <div className='grid grid-cols-1 md:grid-cols-2 m-3 md:m-5 items-center'>
           <div className='flex flex-col gap-2 p-2'>
             <div className='text-3xl font-semibold'>WELCOME TO</div>
-            <div className='flex flex-row text-3xl font-bold'>
+            <div className='flex flex-row text-4xl font-extrabold'>
               <p className='text-[#63C625]'>MEDI</p>
               <p className='text-black'>TRACK</p>
             </div>
