@@ -77,7 +77,7 @@ function ViewMedicines({ medicines }) {
           </button>
         </div>
       )}
-      <div className='overflow-x-auto mt-5'>
+      <div className='overflow-x-auto mt-5 rounded-lg'>
         <table className='min-w-full md:w-[50vw] mx-auto divide-y divide-gray-200'>
           <thead className='bg-[#63C625]'>
             <tr>
@@ -103,10 +103,10 @@ function ViewMedicines({ medicines }) {
               </th>
             </tr>
           </thead>
-          <tbody className='bg-gray-100 divide-y divide-gray-200'>
+          <tbody className='divide-y divide-gray-200'>
             {filteredMedicines.map((medicine, index) => (
-              <tr key={medicine.id}> {/* Ensure each medicine has a unique id */}
-                {isRemoveMode && ( // Conditionally render checkboxes
+              <tr key={medicine.id} className={index % 2 === 0 ? 'bg-gray-100' : 'bg-white'}>
+                {isRemoveMode && (
                   <td className='px-6 py-4 whitespace-nowrap'>
                     <input
                       type='checkbox'
@@ -125,6 +125,7 @@ function ViewMedicines({ medicines }) {
               </tr>
             ))}
           </tbody>
+
         </table>
       </div>
     </div>

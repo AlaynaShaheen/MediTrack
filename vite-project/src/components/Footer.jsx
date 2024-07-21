@@ -5,7 +5,7 @@ function Footer() {
   return (
     <div className="bg-[#EEFFF9] p-4 flex flex-col gap-3">
       {/* LOGO */}
-      <div className='flex font-extrabold text-3xl md:text-4xl items-center justify-center'>
+      <div className='flex font-extrabold text-2xl md:text-3xl items-center justify-center'>
         <h1 className='text-[#63C625]'>MEDI</h1>
         <h1 className='text-black'>TRACK</h1>
       </div>
