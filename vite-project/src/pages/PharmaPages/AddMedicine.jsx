@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import Back from '../../components/Back';
 import { useNavigate } from 'react-router-dom';
 import QRCode from 'qrcode.react'; // Import QRCode from qrcode.react
+import { toast } from 'react-toastify';
 
 function AddMedicine() {
   const navigate = useNavigate();
@@ -28,6 +29,7 @@ function AddMedicine() {
     // Handle form submission (e.g., send data to server)
     console.log('Submitted data:', medicineData);
     // Generate QR code
+    toast.success('Medicine added successfully!! Download the generated QR code and use it on your medicines..')
     setShowQRCode(true);
     
   };
@@ -114,7 +116,7 @@ function AddMedicine() {
         {/* Conditionally render QR code */}
         {showQRCode && (
           <div className='flex flex-col items-center gap-2 mt-5'>
-            QR Code for the given data!!
+            <p className='mb-2'>QR code for your medicine:</p>
             <QRCode value={JSON.stringify(medicineData)} />
           </div>
         )}
