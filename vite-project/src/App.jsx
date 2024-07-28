@@ -8,6 +8,7 @@ import { BrowserRouter , Routes , Route } from 'react-router-dom';
 import NotificationPage from '../src/pages/UserPages/Notifications';
 import Login from './pages/Login';
 import Signup from './pages/Signup';
+import Profile from './components/Profile';
 export default function App() {
   return (
     <div>
@@ -21,6 +22,7 @@ export default function App() {
           <Route path="/user" element={<UserHome />} />
           <Route path='/login' element={<Login/>}/>
           <Route path='/signup' element={<Signup/>}/>
+          <Route path='/profile' element={<Profile/>}/>
         </Routes>
       </BrowserRouter>
     </div>

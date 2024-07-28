@@ -8,6 +8,7 @@ import { FaFacebook } from "react-icons/fa";
 import { FaApple } from "react-icons/fa";
 import {FaChevronLeft} from "react-icons/fa";
 import { useNavigate } from 'react-router-dom';
+import SignInwithGoogle from '../components/signInWithGoogle';
 // import LoginButton from '../components/loging';
 // import LogoutButton from '../components/logoutg';
 // const clientId="712965141500-cdlt80s693m7ehtpcbrm2sfuo4hrjts1.apps.googleusercontent.com";
@@ -63,10 +64,11 @@ const Login = () => {
           />
           <button className="bg-[#63C625] text-white font-bold text-xl py-3 px-4 rounded w-full mb-4">CONTINUE</button>
           <div className="flex items-center justify-center MT-6 mb-5 text-2xl font-medium text-black">OR</div>
-          <button className="bg-white border border-[#63C625] border-2 text-black font-bold py-3 px-4 rounded w-full mb-2 flex">
+          {/* <button className="bg-white border border-[#63C625] border-2 text-black font-bold py-3 px-4 rounded w-full mb-2 flex">
             <FcGoogle className="text-blue w-7 h-7 ml-3 mr-6" />
             Sign in with Google
-          </button>
+          </button> */}
+          <SignInwithGoogle/>
           <button className="bg-white border border-[#63C625] border-2 text-black font-bold py-3 px-4 rounded w-full mb-2 flex">
             <FaFacebook className="w-7 h-7 ml-3 mr-6" style={{ color: '#3b5998' }}/>
             Sign in with Facebook
